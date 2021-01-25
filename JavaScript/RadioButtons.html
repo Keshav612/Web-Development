@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Input from Radio Button
+        </title>
+        <script>
+            function fn1()
+            {
+                var r1=document.getElementById("rd1");
+                var r2=document.getElementById("rd2");
+                if(r1.checked==true)
+                {
+                    alert("Selected : " + r1.value);
+                }
+                else if (r2.checked==true)
+                {
+                    alert("Selected : " +r2.value);
+                }
+                else
+                alert("None selected");
+            }
+        </script>
+    </head>
+    <body>
+        <input id ="rd1" name ="grp1" type="radio" value="Keshav612">Keshav Mishra</input>
+        <br>
+        <br>
+        <input id="rd2" name= "grp1" type="radio" value="Keshav">Mishra Keshav</input>
+        <br>
+        <br>
+        <button id ="btn1" onclick="fn1()" >Click Me</button>
+    </body>
+    </body>
+</html>
