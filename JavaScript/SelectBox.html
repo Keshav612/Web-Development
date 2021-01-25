@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Select box input
+        </title>
+        <script>
+            function fn1()
+            {
+                var s1=document.getElementById("selectBox");
+                //alert(s1.value);this will not work
+                alert(s1.options[s1.selectedIndex].value);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <select id="selectBox">
+           <option value="Ram">Ram</option>
+           <option value="Raj">Raj</option>
+           <option value="Rak">Rak</option>
+           <br>
+           
+        </select>
+        <button id="btn1" onclick="fn1()">Click Me</button>
+    </body>
+</html>
