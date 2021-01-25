@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Taking input from User</title>
+        <script>
+            function fun1()//Input from user and alert when button clicked.
+            {
+                var str=document.getElementById("text1").value;
+                var str2=document.getElementById("text2").value;
+                if(str==str2)
+                {
+                    alert("Username ans password matches");
+                }
+                else
+                {
+                    alert ("Username and password does not match");
+                }
+                //alert("Value inside text box is : "+str);
+            }
+        </script>
+    </head>
+    <body>
+        <input id="text1" placeholder="Enter UserName ">
+        <br>
+        <br>
+        <input id="text2" type="password" placeholder="Enter password">
+        <button onclick="fun1()" id ="btn1">Click Me</button>
+
+
+    </body>
+</html>
