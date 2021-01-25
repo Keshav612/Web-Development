@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            Practice page
+        </title>
+        <script>
+            function fn1()
+            {
+                var a=document.getElementById("id1").innerHTML;
+                var b=document.getElementById("id2").innerHTML;
+                if(a==b)
+                {
+                    alert("Matches");
+                }
+                else
+                {
+                    alert("Don't Match");
+                }
+            }
+            function fn2()
+            {
+                if(document.getElementById("rd1").checked==true)
+                {
+                    alert("Male");
+                }
+                else if(document.getElementById("rd2").checked==true)
+                {
+                    alert("Female");
+                }
+                else{
+                    alert("None");
+                }
+            }
+            function fn3()
+            {
+                var s1=document.getElementById("selectbox");
+                alert(s1.options[s1.selectedIndex].value);
+            }
+        </script>
+    </head>
+    <body>
+        <input id="id1" placeholder="Enter Username">
+        <br><br>
+        <input id="id2" placeholder="Enter password">
+        <br><br>
+        <button id="btn1" onclick="fn1()">Click Me</button>
+
+        <p>Gender</p>
+        <input type="radio" id="rd1" name="rd" value="Male">M</input>
+        <br>
+        <input type="radio" id="rd2" name="rd" value="Female">F</input>
+        <br>
+        <button id="btn2" onclick="fn2()">Click Me</button>
+
+        <p>Age</p>
+        <select id="selectbox">
+            <option value="0-10">0-10</option>
+            <option value="11-20">11-20</option>
+            <option value="21-30">21-30</option>
+            <option value="31-40">31-40</option>
+        </select>
+
+
+        <br><br>
+        <button id="btn3" onclick="fn3()">Click Me</button>
+    </body>
+</html>
