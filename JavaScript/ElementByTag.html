@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Get Element by Tag Name
+        </title>
+        <script>
+            function Styling()
+            {
+                var para=document.getElementsByTagName("p");
+                para[0].style.fontSize=25;
+                para[1].style.fontWeight="bold";
+                para[2].style.fontStyle="italic";
+                para[3].style.color="aqua";
+                for(var i=5;i<para.length;i++)
+                {
+                    para[i].style.color="Blue";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p>This is paragraph 1.</p>
+        <p>This is paragraph 2.</p>
+        <p>This is paragraph 3.</p>
+        <p>This is paragraph 4.</p>
+        <p>This is paragraph 5.</p>
+        <p>This is paragraph 6.</p>
+        <p>This is paragraph 6.</p>
+        <p>This is paragraph 6.</p>
+        <p>This is paragraph 6.</p>
+        <p>This is paragraph 6.</p>
+
+
+        <button onclick="Styling()">Click Me</button>
+    </body>
+
+</html>
