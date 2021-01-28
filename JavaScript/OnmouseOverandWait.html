@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            On mouseover and mouseout
+        </title>
+        <script>
+            function fun1()
+            {
+                document.getElementById("image").src="images/i2.jpg"
+            }
+            function fun2()
+            {
+                document.getElementById("image").src="images/i1.jpg"
+            }
+        </script>
+    </head>
+    <body>
+        <img id="image" onmouseover="fun1()" onmouseout="fun2()" width="1000px" height="200px" src="images/i1.jpg" />
+    </body>
+    </body>
+</html>
