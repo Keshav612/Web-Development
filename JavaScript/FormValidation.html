@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <title>Form Validation</title>
+    <script>
+        function f1()
+        {
+            var username=document.getElementById("t1");
+            var password=document.getElementById("t2");
+            if(username.value.trim()=="" || password.value.trim()=="")
+            {
+                alert("No blanks");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <form onsubmit="return f1()" action="msg.html">
+        <input type="text" id="t1" placeholder="Usename">
+        <br><br>
+        <input type="password" id="t2" placeholder="Password">
+        <br><br>
+        <button id="btn1" type="submit">Click Me</button>
+        </form>
+    </body>
+</html>
