@@ -1,6 +1,8 @@
 const express = require('express')
-const app = express()
+const appConfig=require("./config/appConfig")
+
+const app = express();
 
 app.get('/',(req,res) => res.send("Hello World"))
 
-app.listen(3000,() => console.log("This is console"))
+app.listen(appConfig.port,() => console.log("This is console"))
